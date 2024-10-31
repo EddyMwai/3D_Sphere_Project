@@ -29,3 +29,30 @@ snake_speed = initial_speed
 
 # Set up the clock
 clock = pygame.time.Clock()
+def draw_obstacles(obstacles):
+    for obstacle in obstacles:
+        pygame.draw.rect(display, (255, 0, 0), obstacle)  # Red obstacles
+
+def message(msg, color):
+    mesg = font_style.render(msg, True, color)
+    display.blit(mesg, [width / 6, height / 3])
+
+def game_loop():
+    global snake_speed  # Use the global variable for speed
+    game_over = False
+    game_close = False
+
+    snake_speed = initial_speed  # Reset speed to initial speed
+
+    x1 = width / 2
+    y1 = height / 2
+
+    x1_change = 0
+    y1_change = 0
+
+    snake_List = []
+    Length_of_snake = 1
+
+    foodx = random.randint(0, (width - snake_block) // snake_block) * snake_block
+    foody = random.randint(0, (height - snake_block) // snake_block) * snake_block
+
