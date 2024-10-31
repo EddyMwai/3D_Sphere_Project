@@ -29,6 +29,23 @@ snake_speed = initial_speed
 
 # Set up the clock
 clock = pygame.time.Clock()
+# Fonts
+font_style = pygame.font.SysFont("bahnschrift", 25)
+
+def draw_gradient(color1, color2):
+    for i in range(height):
+        color = [
+            color1[j] + (color2[j] - color1[j]) * i // height for j in range(3)
+        ]
+        pygame.draw.line(display, color, (0, i), (width, i))
+
+def draw_sphere(x, y, radius):
+    pygame.draw.circle(display, (255, 255, 255), (x, y), radius)  # White food
+
+def our_snake(snake_block, snake_list):
+    for x in snake_list:
+        pygame.draw.circle(display, (0, 0, 0), (x[0] + snake_block // 2, x[1] + snake_block // 2), snake_block // 2)  # Black snake
+
 def draw_obstacles(obstacles):
     for obstacle in obstacles:
         pygame.draw.rect(display, (255, 0, 0), obstacle)  # Red obstacles
