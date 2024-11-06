@@ -41,15 +41,15 @@ def draw_gradient(color1, color2):
         pygame.draw.line(display, color, (0, i), (width, i))
 
 def draw_sphere(x, y, radius):
-    pygame.draw.circle(display, (255, 255, 255), (x, y), radius)  # White food
+    pygame.draw.circle(display, (255, 255, 255), (x, y), radius)
 
 def our_snake(snake_block, snake_list):
     for x in snake_list:
-        pygame.draw.circle(display, (0, 0, 0), (x[0] + snake_block // 2, x[1] + snake_block // 2), snake_block // 2)  # Black snake
+        pygame.draw.circle(display, (0, 0, 0), (x[0] + snake_block // 2, x[1] + snake_block // 2), snake_block // 2)
 
 def draw_obstacles(obstacles):
     for obstacle in obstacles:
-        pygame.draw.rect(display, (255, 0, 0), obstacle)  # Red obstacles
+        pygame.draw.rect(display, (255, 0, 0), obstacle)
 
 def message(msg, color):
     mesg = font_style.render(msg, True, color)
@@ -76,10 +76,10 @@ def game_loop():
 
     current_color_index = 0  # Start with the first background color
 
-    # Define obstacle positions and dimensions
+    #Obstacle positions and dimensions
     obstacles = [
-        pygame.Rect(100, 100, snake_block * 3, snake_block),   # Horizontal wall
-        pygame.Rect(400, 300, snake_block, snake_block * 3),   # Vertical wall
+        pygame.Rect(100, 100, snake_block * 3, snake_block),
+        pygame.Rect(400, 300, snake_block, snake_block * 3),
         pygame.Rect(250, 450, snake_block * 2, snake_block),
         pygame.Rect(450, 100, snake_block * 2, snake_block),
         pygame.Rect(150, 200, snake_block, snake_block * 4),
@@ -87,14 +87,13 @@ def game_loop():
         pygame.Rect(300, 100, snake_block * 2, snake_block),
         pygame.Rect(150, 400, snake_block, snake_block * 4),
         pygame.Rect(350, 150, snake_block, snake_block * 4),
-        # Another horizontal wall
     ]
 
     while not game_over:
 
         while game_close:
             display.fill((0, 0, 0))  # Black background for game over
-            message("You Lost! Press C to play again or Q to Quit", (255, 0, 255))  # Red message
+            message("You Lost! Press C to play again or Q to Quit", (255, 0, 255))
             pygame.display.update()
 
             for event in pygame.event.get():

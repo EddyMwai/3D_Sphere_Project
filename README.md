@@ -28,6 +28,17 @@ A classic Snake Game built with Python and Pygame, featuring colorful background
 2. Install Pygame:
    ```bash
    pip install pygame
+### Cloning the Project
+
+To clone this project, follow these steps:
+
+1. Open your terminal.
+2. Navigate to the desired directory where you want to clone the project.
+3. Use the following command to clone the repository:
+
+   ```bash
+   git clone https://github.com/temora3/SnakeGame.git
+
 ## How to Play
 
 1. **Start the Game**:
