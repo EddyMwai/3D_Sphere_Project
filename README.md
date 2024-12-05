@@ -38,7 +38,7 @@ Install Python
 1. Open the terminal or command prompt.
 2. Type the following command to install Pygame:
    pip install pygame
-3. 
+
 ### Cloning the Project
 
 To clone this project, follow these steps:
