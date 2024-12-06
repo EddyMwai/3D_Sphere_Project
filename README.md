@@ -8,82 +8,89 @@ A classic Snake Game built with Python and Pygame, featuring colorful background
 - [Installation](#installation)
 - [How to Play](#how-to-play)
 
-
 ---
 
 ## Features
 - **Dynamic Backgrounds**: The background color changes each time the snake eats food.
-- **Randomized Obstacles**: Red obstacles are placed on the screen for the snake to avoid.
-- **Gradient Background Effect**: A gradient effect enhances the game’s visual appeal.
-- **Growing Snake**: The snake increases in length and speed each time it eats food.
-- **Game Over Screen**: Clear options to restart or quit when the game is over.
+- **Randomized Obstacles**: Red obstacles are placed randomly on the screen for the snake to avoid.
+- **Gradient Background Effect**: A visually appealing gradient effect enhances the gameplay experience.
+- **Growing Snake**: The snake grows in length and speed with each piece of food it eats.
+- **Game Over Screen**: Includes clear options to restart or quit.
+
+---
 
 ## Game Rules
 1. Control the snake to eat the food that appears randomly on the screen.
-2. Avoid hitting the screen boundaries or obstacles.
+2. Avoid colliding with the screen boundaries, obstacles, or the snake's own body.
 3. The game ends if the snake hits the boundaries, an obstacle, or itself.
 
+---
+
 ## Installation
-Install Python
-1. **Check if Python is already installed**:
-   - Open a terminal (Command Prompt on Windows or Terminal on macOS/Linux).
+
+### Step 1: Install Python
+1. Check if Python is installed:
+   - Open your terminal (Command Prompt on Windows or Terminal on macOS/Linux).
    - Type: `python --version`
-   - If you see a version number you already have Python installed.
-2. **Download Python** (if not installed):
-   - Go to [python.org/downloads](https://www.python.org/downloads/).
+   - If a version number is displayed, Python is already installed.
+2. Download Python (if not installed):
+   - Visit [python.org/downloads](https://www.python.org/downloads/).
    - Download and install the latest version of Python for your system.
-   - During installation, **check the box that says "Add Python to PATH"**.
+   - During installation, ensure you check the box that says "Add Python to PATH."
 
 ### Step 2: Install Pygame
-1. Open the terminal or command prompt.
-2. Type the following command to install Pygame:
-   pip install pygame
+1. Open your terminal or command prompt.
+2. Run the following command to install Pygame:
+   
+    `pip install pygame`
 
-### Cloning the Project
-
-To clone this project, follow these steps:
-
+### Step 3: Clone the Project
 1. Open your terminal.
-2. Navigate to the desired directory where you want to clone the project.
-3. Use the following command to clone the repository:
+2. Navigate to the directory where you'd like to store the project.
+3. Clone the repository using the command:
 
-   git clone https://github.com/temora3/SnakeGame.git
+   `git clone https://github.com/temora3/SnakeGame.git`
+
+---
 
 ## How to Play
 
 1. **Start the Game**:
-   - Run the game using the command:
-     python snake_game.py
-   - The game window will open with a colorful gradient background and a black snake in the center.
+   - Run the game with the command:
+
+      `python snake_game.py`
+   - A game window will open, featuring a colorful gradient background and a black snake in the center.
 
 2. **Game Controls**:
-   - Use the **Arrow Keys** on your keyboard to control the snake's movement:
+   - Use the **arrow keys** on your keyboard to move the snake:
      - **Up Arrow**: Move up
      - **Down Arrow**: Move down
      - **Left Arrow**: Move left
      - **Right Arrow**: Move right
-   - Note: The snake cannot reverse direction (e.g., if you’re moving left, pressing the right arrow won’t reverse it).
+   - Note: The snake cannot reverse direction (e.g., pressing the right arrow while moving left won't work).
 
 3. **Objective**:
    - Guide the snake to eat the **white food circle** that appears randomly on the screen.
-   - Each time the snake eats the food:
-     - It grows in length.
-     - The background changes color.
-     - The game’s speed increases, making it more challenging.
+   - Each time the snake eats food:
+     - It grows longer.
+     - The background color changes.
+     - The game speed increases, making it more challenging.
 
 4. **Avoid Obstacles**:
-   - Red obstacles are scattered around the screen; avoid them to prevent game over.
-   - Avoid running into the screen boundaries or the snake's own body.
+   - Red obstacles are scattered randomly on the screen; avoid them.
+   - Avoid colliding with the screen boundaries or the snake's own body.
 
 5. **Game Over**:
-   - The game will end if:
-     - The snake collides with an obstacle, the boundary, or itself.
-   - When the game is over, a message appears with the options:
-     - **Press `C`** to play again from the beginning.
-     - **Press `Q`** to quit the game.
+   - The game ends if:
+     - The snake hits an obstacle, the screen boundary, or itself.
+   - After the game ends, a message appears with two options:
+     - **Press `C`** to restart the game.
+     - **Press `Q`** to quit.
 
 6. **Winning Strategy**:
-   - Be cautious of your growing snake’s length and speed as the game progresses.
-   - Plan your moves in advance to avoid collisions with obstacles or the snake’s own body.
+   - Be mindful of your growing snake’s length and speed as the game progresses.
+   - Plan your movements in advance to avoid collisions.
 
-Enjoy the challenge, and see how long you can grow your snake!
+---
+
+Enjoy the game, and challenge yourself to grow the longest snake possible! 🚀
