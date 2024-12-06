@@ -22,7 +22,7 @@ A classic Snake Game built with Python and Pygame, featuring colorful background
 ## Game Rules
 1. Control the snake to eat the food that appears randomly on the screen.
 2. Avoid colliding with the screen boundaries, obstacles, or the snake's own body.
-3. The game ends if the snake hits the boundaries, an obstacle, or itself.
+3. The game ends if the snake hits the boundaries, an obstacle itself or backward movement.
 
 ---
 
@@ -93,4 +93,5 @@ A classic Snake Game built with Python and Pygame, featuring colorful background
 
 ---
 
-Enjoy the game, and challenge yourself to grow the longest snake possible! 🚀
+Enjoy the game and challenge yourself to grow the longest snake possible!
+You can do it.🚀
